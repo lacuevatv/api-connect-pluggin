@@ -20,7 +20,7 @@ function init () {
     var btnsLocales = document.querySelectorAll(classButtonLocal);
     var btnsSabores = document.querySelectorAll(classButtonSabores);
 
-    if (btnsLocales) {
+    if (btnsLocales.length > 0) {
         //pagina de ver sabores
 
         createPopup();
@@ -36,7 +36,7 @@ function init () {
 
     }
 
-    if (btnsSabores) {
+    if (btnsSabores.length > 0) {
         //pagina de ubicar sabor en sucursales
 
         createPopup();
@@ -109,7 +109,7 @@ function caj_closeBox() {
 
         document.querySelector('#'+idContenido).innerHTML = '';
         
-        box.querySelector('.lds_dual-ring').style.display = 'inline-block';
+        box.querySelector('.lds-dual-ring').style.display = 'inline-block';
     }  
 }
 

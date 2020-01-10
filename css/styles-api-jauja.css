@@ -1,4 +1,6 @@
 /*POPUP ESTRUCTURA*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700&display=swap');
+
 .caj-wrapper-box {
     background-color: rgba(0,0,0,0.8);
     position: fixed;
@@ -29,9 +31,9 @@
 
 .caj-inner-wrapper {
     position: relative;
-    padding: 40px 20px 20px;
-    width: 80%;
-    height: 500px;
+    padding: 0;
+    width: 95%;
+    height: 80%;
     background-color: #fff;
 }
 
@@ -40,10 +42,10 @@
     background-color: transparent;
     border: none;
     outline: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
     transition: all 500ms;
 }
@@ -51,9 +53,9 @@
 #caj-close-popup:before{
     content: '';
     position: absolute;
-    left: 3px;
-    top: 46%;
-    width: 90%;
+    left: 6px;
+    top: 49%;
+    width: 80%;
     height: 2px;
     transform: rotate(45deg);
     background-color: rgba(0,0,0,0.8);
@@ -63,9 +65,9 @@
 .caj-inner-wrapper #caj-close-popup:after{
     content: '';
     position: absolute;
-    right: 2px;
-    top: 43%;
-    width: 90%;
+    right: 3px;
+    top: 49%;
+    width: 80%;
     height: 2px;
     transform: rotate(-45deg);
     background-color: rgba(0,0,0,0.8);
@@ -106,5 +108,132 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* CONTENIDO POPUP */
+
+.caj-content {
+    overflow-y: scroll;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 80px 20px 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.caj-content ul, .caj-content li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caj-titulo-sabores {
+    text-align: center;
+    color: #e6314c;
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/*ul*/
+.caj-lista-categoria {
+    list-style: none;
+    padding: 0;
+}
+/*li*/
+.caj-li-categoria {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.titulo-categoria {
+    color: #e6314c;
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    text-transform: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/*ul*/
+.caj-lista-sabores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*li*/
+.caj-li-sabores {
+    width: 100%;
+    margin: 5px 0!important
+}
+
+.titulo-sabor {
+    font-family: 'Nunito', sans-serif;
+    color: #73706a;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.descripcion-sabor {
+    color: #73706a;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+    .caj-titulo-sabores {
+        font-size: 54px;
+        line-height: 68px;
+    }
+}
+
+@media (min-width: 992px) {
+    .caj-inner-wrapper {
+        height: 70%;
+        width: 80%;
+    }
+
+    #caj-close-popup {
+        top: 20px;
+    }
+
+    .caj-content {
+        padding: 40px 20px 20px;
+    }
+
+    .caj-lista-sabores {
+        justify-content: space-between;
+    }
+
+    .caj-li-sabores {
+        width: 48%;  
+    }
+}
+
+@media (min-width: 1200px) {
+    .caj-titulo-sabores {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .caj-li-sabores {
+        width: 32%;
+    }
+    .descripcion-sabor {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
