@@ -17,9 +17,9 @@ add_action('wp_enqueue_scripts', 'caj_insertar_js');
 
 function caj_insertar_js(){
     
-    wp_register_script('caj_myscript', plugins_url( '/js/script-api-jauja.js' ), array(), '1', true );
+    wp_register_script('caj_myscript', plugins_url( '/connect-api-jauja/js/script-api-jauja.js' ), array(), '1', true );
     wp_enqueue_script('caj_myscript');
     
-    wp_register_style( 'caj_my-styles', plugins_url( '/css/styles-api-jauja.css' ) );
+    wp_register_style( 'caj_my-styles', plugins_url( '/connect-api-jauja/css/styles-api-jauja.css' ) );
 	wp_enqueue_style( 'caj_my-styles' );
 }

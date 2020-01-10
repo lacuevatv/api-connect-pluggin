@@ -1,3 +1,4 @@
+/*POPUP ESTRUCTURA*/
 .caj-wrapper-box {
     background-color: rgba(0,0,0,0.8);
     position: fixed;
@@ -7,11 +8,11 @@
     height: 0;
     width: 0;
     opacity: 0;
-    transition: all 500ms;
+    transition: opacity 500ms;
 }
 
 .caj-wrapper-box.open {
-    transition: all 500ms;
+    transition: opacity 500ms;
     opacity: 1;
     height: 100%;
     width: 100%;
@@ -41,14 +42,16 @@
     outline: none;
     width: 40px;
     height: 40px;
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     transition: all 500ms;
 }
 
 #caj-close-popup:before{
     content: '';
     position: absolute;
-    left: 1;
+    left: 3px;
     top: 46%;
     width: 90%;
     height: 2px;
@@ -61,7 +64,7 @@
     content: '';
     position: absolute;
     right: 2px;
-    top: 45%;
+    top: 43%;
     width: 90%;
     height: 2px;
     transform: rotate(-45deg);
@@ -74,12 +77,34 @@
     transition: all 500ms;
 }
 
-#caj-close-popup:hover #caj-close-popup:before {
-    transform: rotate(35deg);
-    transition: all 500ms;
+/*SPINNER*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 11;
+    transition: all 1s;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-#caj-close-popup:hover #caj-close-popup:before {
-    transform: rotate(-35deg);
-    transition: all 500ms;
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    /*margin: 8px;*/
+    border-radius: 50%;
+    border: 6px solid #0071c5;
+    border-color: #0071c5 transparent #0071c5 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

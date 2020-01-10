@@ -1,0 +1,162 @@
+{
+    "sucursales_info": [
+        {
+            "id": 1,
+            "sucursal": "Heladería Casa Central",
+            "direccion": "Av San Martin 2867",
+            "latitud": "-41.963323",
+            "longitud": "-71.535120",
+            "mapa": "https://www.google.com.ar/maps/place/Helados+Jauja+S.A./@-41.96329,-71.5371821,17z/data=!3m1!4b1!4m5!3m4!1s0x961bbfcfb9138151:0x9dbe8bb3c6b7768f!8m2!3d-41.96329!4d-71.5349934?hl=es&hl=es",
+            "email": "info@jauja.com.ar",
+            "telefono": "02944492448 int 33",
+            "horario": "Todos los días de 12 a 0 hs.",
+            "estado": "act"
+        },
+        {
+            "id": 3,
+            "sucursal": "Moreno 49 - BRC",
+            "direccion": "Moreno 49",
+            "latitud": "-41.134661",
+            "longitud": "-71.309159",
+            "mapa": "https://www.google.com.ar/maps/place/Helados+Jauja/@-41.1345684,-71.3114259,17z/data=!3m1!4b1!4m5!3m4!1s0x961a7b7290dbec8f:0xbdca05ac7bb47b5b!8m2!3d-41.1345684!4d-71.3092372?hl=es&hl=es",
+            "email": "moreno@jauja.com.ar",
+            "telefono": "02944437888",
+            "horario": "Lunes a Viernes: de 9:30 a 0:30 hs.<br /> Sábados, Domingos y Feriados: de 12 a 0:30 hs.",
+            "estado": "act"
+        },
+        {
+            "id": 4,
+            "sucursal": "La Cubanera - BRC",
+            "direccion": "Pioneros 4541",
+            "latitud": "-41.131153",
+            "longitud": "-71.362351",
+            "mapa": "https://www.google.com/maps?f=q&source=s_q&hl=es&geocode&q=Av.+Pioneros+4541,+Bariloche&sll=37.0625,-95.677068&sspn=24.594583,77",
+            "email": "gondh@hotmail.com",
+            "horario": "Lunes a jueves: de 12 a 23 hs.<br />Viernes: a domingo  de 12:00 hs a 0:00 hs.<br />",
+            "estado": "act"
+        },
+        {
+            "id": 5,
+            "sucursal": "Luz de Luna",
+            "direccion": "Ruta 16, km 10",
+            "latitud": "-42.055367",
+            "longitud": "-71.596549",
+            "email": "luzdelunabistro@gmail.com",
+            "telefono": "0294 15 4590298.",
+            "horario": "Martes a Domingo de 12 a 0 hs. Lunes de 12 a 16 hs.",
+            "delivery": "no.",
+            "estado": "act"
+        },
+        {
+            "id": 6,
+            "sucursal": "YAKRUNA Cocina y Café (punto de venta independiente)",
+            "direccion": "Santa Fe 195",
+            "latitud": "-38.953009",
+            "longitud": "-68.056169",
+            "mapa": "https://www.google.com.ar/maps/place/Sta+Fe+198-100,+Q8300IQJ+Neuqu%C3%A9n/@-38.9529825,-68.0583662,17z/data=!3m1!4b1!4m5!3m4!1s0x960a33d3d1202293:0x5cf0d04f80510450!8m2!3d-38.9529825!4d-68.0561775?hl=es",
+            "email": "neuquen@jauja.com.ar",
+            "telefono": "0299 4434589",
+            "horario": "Lunes a viernes: de 8:30 a 12:30 y de 16:30 a 23 hs. .<br /> Sábados: de 10 a 13 hs. y de 17 a 23:30 hs. <br /> Domingos: de 11 a 14 hs y de 17 a 23 hs.",
+            "delivery": "Llamanos.",
+            "estado": "cer"
+        },
+        {
+            "id": 7,
+            "sucursal": "LAFINUR - CABA",
+            "direccion": "Lafinur 3275",
+            "latitud": "-34.577650",
+            "longitud": "-58.412650",
+            "mapa": "https://www.google.com.ar/maps/place/Lafinur+3275,+C1425FAG+CABA/@-34.5778846,-58.4148397,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb57993779a89:0x95c47ec0365a0e1f!8m2!3d-34.577889!4d-58.412651",
+            "email": "pablo@stnpublicidad.com.ar",
+            "telefono": "011 15 4066 2457",
+            "horario": "Lunes a domingo 12 a 24 hs. Junto a De Rosa Pizzería (Jauja al Paso)",
+            "estado": "cer"
+        },
+        {
+            "id": 8,
+            "sucursal": "Lacroze - CABA",
+            "direccion": "Av Federico Lacroze 2239",
+            "latitud": "-34.568291",
+            "longitud": "-58.443401",
+            "email": "info@jauja.com.ar",
+            "telefono": "01147715978",
+            "estado": "cer"
+        },
+        {
+            "id": 19,
+            "sucursal": "Villa Mitre - Bahía Blanca",
+            "direccion": "Rivadavia 1535 (frente a la plaza)",
+            "latitud": "-38.729255",
+            "longitud": "-62.246693",
+            "mapa": "https://www.google.com/maps/place/Rivadavia+1535,+B8001BFM+Bah%C3%ADa+Blanca,+Buenos+Aires,+Argentina/@-38.7293348,-62.2488571,17z/data=!3m1!4b1!4m5!3m4!1s0x95eda33ba0454017:0xa9570227978da8ad!8m2!3d-38.7293348!4d-62.2466684?hl=es",
+            "email": "emialba38@hotmail.com",
+            "telefono": "4812831",
+            "horario": "Lunes a Jueves 12 a 01.30 hr  <br />Viernes y Sábados 12 a 2.00 hr <br />  Domingo 11 a 01.30 Hr",
+            "delivery": "SÍ.  Diurno:  Lunes a domingos 13.30 a 16.30  <br />Noches:  Domingo a jueves 21.00 a 01.00 <br /> viernes  y sabado de 21 a 01.30.",
+            "estado": "act"
+        },
+        {
+            "id": 20,
+            "sucursal": "Estomba  - BB",
+            "direccion": "Estomba 802 (esquina Juan Molina)",
+            "latitud": "-38.711507",
+            "longitud": "-62.275422",
+            "mapa": "https://www.google.com/maps/place/Estomba+802,+8000+Bah%C3%ADa+Blanca,+Buenos+Aires,+Argentina/@-38.7115108,-62.2775997,17z/data=!3m1!4b1!4m5!3m4!1s0x95edbca7c2365569:0xde581e0867457c02!8m2!3d-38.711515!4d-62.275411?hl=es",
+            "email": "emilianojauja@hotmail.com",
+            "telefono": "4518111",
+            "horario": "Domingo a jueves: 12:00 hs a 01:00 hs. <br /> Viernes y Sábado de 12:00 hs a 01:30 hs.",
+            "delivery": "Si!",
+            "estado": "act"
+        },
+        {
+            "id": 21,
+            "sucursal": "Peru Beach",
+            "direccion": "Sebastián Elcano 784",
+            "latitud": "34.472330",
+            "longitud": "-58.492255",
+            "mapa": "https://goo.gl/maps/92LXJMbWy8y",
+            "email": "soulsurfer6340@gmail.com",
+            "telefono": "(011) 47935932",
+            "horario": "De 09:00 a 00:00 hs.",
+            "delivery": "Muy pronto",
+            "estado": "act"
+        },
+        {
+            "id": 23,
+            "sucursal": "Soler",
+            "direccion": "Soler 5699",
+            "latitud": "-34.580058",
+            "longitud": "-58.433598",
+            "mapa": "https://goo.gl/maps/gcppJemtPQR2",
+            "email": "mondongosoler@gmail.com",
+            "telefono": "011-4772-1131",
+            "horario": "12 a 0 hs",
+            "delivery": "Sí. Muy pronto. También a través de Rappi.",
+            "estado": "cer"
+        },
+        {
+            "id": 25,
+            "sucursal": "Puerto Madryn",
+            "direccion": "Av. Roca 822",
+            "latitud": "42.769.727",
+            "longitud": "65.030.737",
+            "mapa": "https://goo.gl/maps/nmYQhBq5K3s",
+            "email": "jaujamadryn@hotmail.com",
+            "telefono": "0280-4450291",
+            "horario": "Domingos a Jueves de 11:00 a 01:00 hs // Viernes y Sábados de 12:00 a 02:00",
+            "delivery": "Si.",
+            "estado": "act"
+        },
+        {
+            "id": 26,
+            "sucursal": "Mercado de Sabores",
+            "direccion": "Onelli 2715",
+            "latitud": "41.964623",
+            "longitud": "71.536769",
+            "mapa": "https://goo.gl/maps/pf2FMP4qZDD2",
+            "email": "andrearanea1@gmail.com",
+            "horario": "Todos los días de 11 a 01 hs",
+            "estado": "cer"
+        }
+    ]
+}

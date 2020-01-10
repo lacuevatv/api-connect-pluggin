@@ -1,0 +1,349 @@
+{
+    "productos_sucursal": {
+        "2": {
+            "categoria": "Helados",
+            "slug": "helados",
+            "descripcion": "Todo lo que vas a disfrutar en nuestros helados es –textualmente- lo que dice ser. La fruta es fruta. La leche es leche. La crema, es crema. El helado, es Jauja.",
+            "articulos": {
+                "1": {
+                    "articulo": "1 Kg de Helado",
+                    "descripcion": "Hasta 5 sabores sabores disponibles por kg",
+                    "valor": 280
+                },
+                "2": {
+                    "articulo": "1/2 kg de helado",
+                    "valor": 190
+                }
+            },
+            "sabores": {
+                "1": {
+                    "categoria": "Frutas al natural",
+                    "descripcion": "Helados sin leche ni crema. Hechos con mucha fruta y jugo, lo que le otorga una textura particular. Más que al \"al agua\" preferimos decir \"al natural\". Los colores son los que dan las frutas. Así que eso también puede variar entre una vez y otra (¡porque las frutas no vienen siempre iguales!)",
+                    "sabores": {
+                        "5": {
+                            "sabor": "Cassis",
+                            "descripcion": "Fruta levemente ácida, de la familia de las grosellas. A pesar de eso la invitan a las reuniones y suelen pasarla bien.  "
+                        },
+                        "6": {
+                            "sabor": "Limsau (Exclusivo)",
+                            "descripcion": "Maceración de flores de saúco con limón. Es un refresco de origen inglés que hacía nuestro tío Elwin."
+                        },
+                        "10": {
+                            "sabor": "Arándano",
+                            "descripcion": "Se cultiva en la Patagonia y en la provincia de Buenos Aires, Santa Fé y Entre Ríos.  El helado lo hacemos con la fruta local."
+                        },
+                        "11": {
+                            "sabor": "Frutilla",
+                            "descripcion": "Elaborado con frutos de la Comarca Andina del Paralelo 42."
+                        },
+                        "12": {
+                            "sabor": "Frambuesa",
+                            "descripcion": "Elaborado con frutos de la Comarca Andina del Paralelo 42."
+                        },
+                        "14": {
+                            "sabor": "Frutos del bosque",
+                            "descripcion": "Mezcla de frutas finas. ¡Sin crema!"
+                        },
+                        "16": {
+                            "sabor": "Pomelo",
+                            "descripcion": "A veces rosado, a veces no. Pero siempre Pomelo."
+                        },
+                        "17": {
+                            "sabor": "Boysenberry",
+                            "descripcion": "Fruta parecida a la frambuesa, más grande y oscura. Actualmente muy difícil de conseguir ya que su cultivo es complicado y se ha reemplazado por la mora híbrida. Tal como su nombre delata, es exótica."
+                        },
+                        "101": {
+                            "sabor": "Limonada de Frambuesa",
+                            "descripcion": "Refrescante limonada con un poco de frambuesa"
+                        },
+                        "112": {
+                            "sabor": "Limón",
+                            "descripcion": "Limón! Y nada más que limón."
+                        },
+                        "115": {
+                            "sabor": "Murra",
+                            "descripcion": "Mora Silvestre - Zarzaparrilla. Se la ve (y se la saborea) al costado de muchos caminos en nuestra Comarca, como también sucede con la Mosqueta."
+                        }
+                    }
+                },
+                "2": {
+                    "categoria": "Frutas con crema",
+                    "descripcion": "Frutas con crema (o Cremas con fruta; el orden de los factores no altera el producto)",
+                    "sabores": {
+                        "20": {
+                            "sabor": "Frutilla a la crema",
+                            "descripcion": "Crema con la pulpa y pedacitos de la fruta."
+                        },
+                        "21": {
+                            "sabor": "Frambuesa a la crema",
+                            "descripcion": "Crema con la pulpa y pedacitos de la fruta."
+                        },
+                        "22": {
+                            "sabor": "Banana",
+                            "descripcion": "Clásico infaltable."
+                        },
+                        "23": {
+                            "sabor": "Cereza a la panna",
+                            "descripcion": "Crema de cerezas al maraschino aunque sin alcohol."
+                        },
+                        "26": {
+                            "sabor": "Lemon pie",
+                            "descripcion": "Es una mousse de limón."
+                        },
+                        "27": {
+                            "sabor": "Mousse de guindas",
+                            "descripcion": "Helado a la crema elaborado con una salsa de guindas casera (tipo amarena) y frutas enteras. Generalmente lo hacemos en otoño."
+                        },
+                        "28": {
+                            "sabor": "Mousse de frutos del bosque",
+                            "descripcion": "Casi un postre en sí mismo."
+                        },
+                        "100": {
+                            "sabor": "Coco",
+                            "descripcion": "Solo coco, loco."
+                        },
+                        "108": {
+                            "sabor": "Amerisqueta",
+                            "descripcion": "Helado de Crema Americana con Dulce de Mosqueta"
+                        }
+                    }
+                },
+                "3": {
+                    "categoria": "Frutas con invitados especiales",
+                    "descripcion": "Frutas con agregados especiales (muy especiales)",
+                    "sabores": {
+                        "30": {
+                            "sabor": "Anarangibre (Exclusivo)",
+                            "descripcion": "Una ligera mousse de ananá y naranja... y pedacitos de jengibre caramelizado."
+                        },
+                        "31": {
+                            "sabor": "Banana split",
+                            "descripcion": "Helado de banana con granizado de chocolate y dulce de leche repostero."
+                        },
+                        "32": {
+                            "sabor": "Sauco de la pasión (exclusivo)",
+                            "descripcion": "Crema de maracuyá sembrada con salsa de sauco... el trópico y la patagonia en un solo helado."
+                        },
+                        "36": {
+                            "sabor": "Yoghurt de frutilla",
+                            "descripcion": "Hecho helado, claro."
+                        },
+                        "114": {
+                            "sabor": "Pepilla",
+                            "descripcion": "Helado de -sobre todo- frutilla con un toque de -sí- Pepino. Refrescante y riquísimo."
+                        }
+                    }
+                },
+                "4": {
+                    "categoria": "Las cremas",
+                    "descripcion": "Helados a la Crema de verdad (sin emulsionantes, agentes de batido ni cosas raras)",
+                    "sabores": {
+                        "38": {
+                            "sabor": "Americana",
+                            "descripcion": "No sabemos por qué, pero así se llama al helado de crema chantilly."
+                        },
+                        "39": {
+                            "sabor": "Vainilla",
+                            "descripcion": "Otro clásico.  Elaborado con varas de vainilla de verdad. No es tan amarilla porque NO tiene colorante (¡ni una gota!)"
+                        },
+                        "42": {
+                            "sabor": "Mate cocido con tres de azúcar (exclusivo)",
+                            "descripcion": "Helado de mate cocido con leche y... azúcar."
+                        },
+                        "43": {
+                            "sabor": "Canela",
+                            "descripcion": "Helado a la crema... de canela. "
+                        },
+                        "44": {
+                            "sabor": "Crema italiana",
+                            "descripcion": "Crema americana con galletitas bañadas en chocolate y dulce de leche repostero."
+                        },
+                        "47": {
+                            "sabor": "Almendrado",
+                            "descripcion": "Crema de almendras. Ídem crema rusa pero con almendras. Las almendras se agregan en el momento de servirlo. Por favor ayúdenos a no olvidarlo reclamándolas :)"
+                        },
+                        "48": {
+                            "sabor": "Ristretto",
+                            "descripcion": "Es un café corto muy concentrado. Recomendamos acompañarlo con crema para suavizar el gusto. Te tiene que gustar el café fuerte... sino, ni lo intentes."
+                        },
+                        "49": {
+                            "sabor": "Selva negra",
+                            "descripcion": "Crema americana, guindas, granizado de chocolate y bizcochuelo borracho."
+                        },
+                        "51": {
+                            "sabor": "Super sambayón",
+                            "descripcion": "Crema, huevos (90 por balde), azúcar, leche y marsala (vino joven muy dulce). No lleva oporto. "
+                        },
+                        "52": {
+                            "sabor": "Tiramisu",
+                            "descripcion": "Helado de queso mascarpone con pionono, cacao y café."
+                        },
+                        "54": {
+                            "sabor": "Mascarpone con frambuesas",
+                            "descripcion": "Tenés que probarlo."
+                        },
+                        "55": {
+                            "sabor": "Crema de maní",
+                            "descripcion": "Su nombre lo dice todo. Con pasta de maní. "
+                        },
+                        "102": {
+                            "sabor": "Peperina Granizada",
+                            "descripcion": "Versión vernácula (libre de saborizantes y colorantes) de la Menta Granizada. Elaborado con hojas de menta y de peperina."
+                        },
+                        "106": {
+                            "sabor": "Crema de higos con nueces",
+                            "descripcion": "Higos, nueces, crema. No puede fallar."
+                        },
+                        "107": {
+                            "sabor": "Granizado",
+                            "descripcion": "Crema con pedacitos de chocolate."
+                        }
+                    }
+                },
+                "5": {
+                    "categoria": "Chocolates",
+                    "descripcion": "",
+                    "sabores": {
+                        "57": {
+                            "sabor": "Chocolate",
+                            "descripcion": "¿Qué podemos decir que no se haya dicho del chocolate?."
+                        },
+                        "58": {
+                            "sabor": "Chocolate con almendras",
+                            "descripcion": "Con almendras tostadas que le agregamos al momento de servirlo (para que no se humedezcan)"
+                        },
+                        "59": {
+                            "sabor": "Chocolate blanco",
+                            "descripcion": "Con pedacitos de chocolate blanco, como para que quede claro."
+                        },
+                        "60": {
+                            "sabor": "Chocolate árabe",
+                            "descripcion": "Con crocante de almendras, nueces, praliné de maní y pasas de uva al rhum."
+                        },
+                        "61": {
+                            "sabor": "Chocolate chips",
+                            "descripcion": "Con granizado de chocolate."
+                        },
+                        "62": {
+                            "sabor": "Choco brownies",
+                            "descripcion": "Mousse de chocolate con brownies caseritos."
+                        },
+                        "64": {
+                            "sabor": "Chocolate con naranjitas",
+                            "descripcion": "Chocolate amargo con naranjitas caramelizadas. "
+                        },
+                        "67": {
+                            "sabor": "Mousse de chocolate",
+                            "descripcion": "Cremosa, suave y dulce..."
+                        },
+                        "68": {
+                            "sabor": "Chocolate andino",
+                            "descripcion": "Una mezcla de helado de chocolate con helado de dulce de leche, y nueces."
+                        },
+                        "104": {
+                            "sabor": "Casi Light",
+                            "descripcion": "Chocolate blanco con dulce de leche y almendras."
+                        }
+                    }
+                },
+                "6": {
+                    "categoria": "Dulces de Leche",
+                    "descripcion": "",
+                    "sabores": {
+                        "69": {
+                            "sabor": "Dulce de leche",
+                            "descripcion": "Un clásico sobre el que no hace falta añadir más nada."
+                        },
+                        "70": {
+                            "sabor": "Merengueche",
+                            "descripcion": "Helado de dulce de leche con merengues caseros. "
+                        },
+                        "71": {
+                            "sabor": "Dulce de leche granizado",
+                            "descripcion": "Otro infaltable."
+                        },
+                        "72": {
+                            "sabor": "Dulce de leche con nueces",
+                            "descripcion": "Con pedacitos de nueces de El Bolsón y la Comarca Andina del Paralelo 42."
+                        },
+                        "73": {
+                            "sabor": "Dulce de leche con moras",
+                            "descripcion": "Le ponemos un toque patagónico al clásico argentino."
+                        },
+                        "74": {
+                            "sabor": "Dulce de leche con brownies",
+                            "descripcion": "Precisamente eso. Los brownies los hacemos nosotros también."
+                        },
+                        "75": {
+                            "sabor": "Mousse de dulce de leche",
+                            "descripcion": "Super requete cremoso."
+                        },
+                        "76": {
+                            "sabor": "Doble dulce de leche",
+                            "descripcion": "Para almas golosas. Con dulce de leche."
+                        },
+                        "89": {
+                            "sabor": "Mousse del Piltri",
+                            "descripcion": "Mousse de dulce de leche con almendras caramelizadas. Un homenaje al cerro Piltriquitrón..."
+                        }
+                    }
+                },
+                "7": {
+                    "categoria": "Helados de estación o de capricho",
+                    "descripcion": "Los hacemos cuando conseguimos el ingrediente fundamental o cuando lo piden por aclamación...",
+                    "sabores": {
+                        "80": {
+                            "sabor": "Crema de otoño",
+                            "descripcion": "Crema americana con membrillos (de nuestra casa, sí) caramelizados... "
+                        },
+                        "82": {
+                            "sabor": "Cardamomo",
+                            "descripcion": "Lo hacemos al natural (sin crema). Es una especia de origen asiático. Se usa para cocinar. Los árabes lo beben con el café. Y dicen -dicen- que es afrodisíaco. "
+                        },
+                        "87": {
+                            "sabor": "Super Chantilly con Frutillas",
+                            "descripcion": "El doble de crema que una crema americana y frutillas de la Comarca Andina del Paralelo 42. (sólo en El Bolsón)"
+                        },
+                        "98": {
+                            "sabor": "Yoghurt de Frambuesa",
+                            "descripcion": "Agarrás un yoghurt, unas frambuesas, crema, leche y azúcar, lo convertís en helado... ¡Y listo!"
+                        },
+                        "105": {
+                            "sabor": "Merengada de Avellanas",
+                            "descripcion": "Crema chantilly con dacquoise de almendras y pedacitos de avellanas"
+                        },
+                        "111": {
+                            "sabor": "Frambuesa con leche de oveja",
+                            "descripcion": "Agarre una oveja. Ordéñela. \r\nCoseche frambuesas.\r\nMezlcar y hacer helado.\r\nListo."
+                        },
+                        "113": {
+                            "sabor": "Lúpulo",
+                            "descripcion": "Crema de Lúpulo con frambuesas"
+                        },
+                        "116": {
+                            "sabor": "Yoghurt del Desoriente",
+                            "descripcion": "Yoghurt Natural, Ananá, Semillas de sésamo caramelizadas."
+                        }
+                    }
+                }
+            }
+        },
+        "3": {
+            "categoria": "GiftCards",
+            "slug": "giftcards",
+            "descripcion": "El mejor regalo!",
+            "articulos": {
+                "3": {
+                    "articulo": "Gift Card 150",
+                    "descripcion": "$150 para disfrutar en Jauja. Se utiliza una sola vez. ¡Aprovechá hasta el último peso porque no se da vuelto!",
+                    "valor": 150
+                },
+                "4": {
+                    "articulo": "GiftCard300",
+                    "descripcion": "$300 a tu favor para disfrutar en Jauja. ¡Aprovechá hasta el último peso porque se usa una vez y no hay vuelto!",
+                    "valor": 300
+                }
+            }
+        }
+    }
+}
