@@ -1,6 +1,11 @@
 /*POPUP ESTRUCTURA*/
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700&display=swap');
 
+/*CLASE PARA HACER CLIC EN SABORES*/
+.caj-local-sucursales {
+    cursor: pointer;
+}
+
 .caj-wrapper-box {
     background-color: rgba(0,0,0,0.8);
     position: fixed;
@@ -14,6 +19,10 @@
 }
 
 .caj-wrapper-box.open {
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
     transition: opacity 500ms;
     opacity: 1;
     height: 100%;
@@ -25,7 +34,19 @@
     height: 100%;
     width: 100%;
     display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
 }
 
@@ -47,6 +68,10 @@
     position: absolute;
     top: 30px;
     right: 20px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -57,8 +82,16 @@
     top: 49%;
     width: 80%;
     height: 2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -69,13 +102,25 @@
     top: 49%;
     width: 80%;
     height: 2px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
 #caj-close-popup:hover {
     opacity: 0.7;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -86,9 +131,17 @@
     height: 80px;
     position: absolute;
     z-index: 11;
-    transition: all 1s;
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -ms-transition: all 1000ms;
+    -o-transition: all 1000ms;
+    transition: all 1000ms;
     top:50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .lds-dual-ring:after {
@@ -164,6 +217,15 @@
 /*ul*/
 .caj-lista-sabores {
     display: flex;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -213,6 +275,10 @@
     }
 
     .caj-lista-sabores {
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
         justify-content: space-between;
     }
 

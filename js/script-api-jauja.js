@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 //inicia el proceso
 function init () {
+    //chequea localstorage
+    caj_checkLocalStorage();
+
     //crea los click
     var btnsLocales = document.querySelectorAll(classButtonLocal);
     var btnsSabores = document.querySelectorAll(classButtonSabores);
@@ -29,6 +32,11 @@ function init () {
             btnsLocales[i].addEventListener('click', function(){
                 event.preventDefault();
                 var id = this.getAttribute('href');
+
+                if (id == '') {
+                    return true;
+                }
+
                 caj_openBox();
                 getSabores(id);
             });
@@ -44,7 +52,12 @@ function init () {
         for (var i = 0; i < btnsSabores.length; i++) {
             btnsSabores[i].addEventListener('click', function(){
                 event.preventDefault();
-                var id = this.getAttribute('href');
+                var id = this.getAttribute('data-id');
+
+                if (id == '' || id == null) {
+                    return true;
+                }
+
                 caj_openBox();
                 getSucursales(id);
             });
@@ -132,6 +145,24 @@ function caj_saveInLocalStore(key, data) {
 
 function caj_deleteInLocalStore(key) {
     localStorage.removeItem(key);
+}
+
+function caj_checkLocalStorage() {
+    var oldData = caj_getFromLocalStore('data-time');
+    var today = new Date();
+    if ( oldData ) {
+        oldData = new Date(oldData)
+        var dias = today.getTime() - oldData.getTime();
+            dias  = Math.round(dias/ (1000*60*60*24));
+
+        if ( dias > 20 ) {
+            localStorage.clear();
+        }
+
+
+    } else {
+        caj_saveInLocalStore('data-time', today);
+    }
 }
 
 function caj_getJsonFile (id, route) {
