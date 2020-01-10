@@ -286,36 +286,5 @@ function caj_writeData(data) {
         ulCategorias.append(liCategoria);
     });
 
-    
-    
-
-    /*for (var i = 0; i < data.length; i++) {
-        var liCategoria = document.createElement('li');
-            liCategoria.setAttribute('class', 'caj-li-categoria');
-            liCategoria.innerText = liCategoria[i].categoria;
-
-        if ( liCategoria[i].sabores.length > 0 ) {
-            var ulSabores = document.createElement('ul');
-                ulSabores.setAttribute('class', 'caj-lista-sabores');
-
-            for (var a = 0; a < liCategoria[i].sabores.length; a++) {
-                var liSabor = document.createElement('li');
-                    liSabor.setAttribute('class', 'caj-li-sabores');
-                    liSabor.innerHTML = `
-                        <h3 class="titulo-sabor">${liCategoria[i].sabores[a].sabor}</h3>
-                        <p class="descripcion-sabor">${liCategoria[i].sabores[a].descripcion}</p>
-                        `;
-            
-                ulSabores.append(liSabor);
-            }//for gustos de categorias
-
-            liCategoria.append(ulSabores);
-        }
-
-        //agrego la categoria
-        ulCategorias.append(liCategoria);
-        
-    }//for categorias*/
-
     contenedor.append(ulCategorias);
 }
