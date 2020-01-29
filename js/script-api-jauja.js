@@ -8,7 +8,7 @@ var wrapperPopup = '.wrapper';//la clase o id donde se va a insertar el popup
 var classButtonLocal = '.caj-local-sabores';//la clase o id que esta puesta en los botones de ver sabores
 var classButtonSabores = '.caj-local-sucursales';//la clase o id que esta puesta en los botones de ver sabores
 var urlApiSabores = 'https://jauja.club/api/sucursales/'//+id
-var urlApiSucursales = 'https://jauja.club/api/sabores/'//+id
+var urlApiSucursales = 'https://jauja.club/api/sabores/'//+ID/sucursales/
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     init();
@@ -53,13 +53,14 @@ function init () {
             btnsSabores[i].addEventListener('click', function(){
                 event.preventDefault();
                 var id = this.getAttribute('data-id');
+                var sabor = this.innerText;
 
                 if (id == '' || id == null) {
                     return true;
                 }
 
                 caj_openBox();
-                getSucursales(id);
+                getSucursales(id, sabor);
             });
         }
     }
@@ -155,7 +156,7 @@ function caj_checkLocalStorage() {
         var dias = today.getTime() - oldData.getTime();
             dias  = Math.round(dias/ (1000*60*60*24));
 
-        if ( dias > 20 ) {
+        if ( dias > 1 ) {
             localStorage.clear();
         }
 
@@ -247,14 +248,21 @@ function getSabores(id) {
 /*
  * función que busca las sucursales que tiene el sabor del id
 */
-function getSucursales(id) {
+function getSucursales(id, sabor) {
     id = typeof id !== 'undefined' ?  id : null;
+    sabor = typeof sabor !== 'undefined' ?  sabor : null;
 
     if(id == null ) {
         return true;
     }
-    console.log(id);
+
+    //caj_getJsonFile(id+'/sucursales/ ,urlApiSucursales).then(function(sucursalInfo) {
+    caj_getJsonFile('sabor.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sabores) {
+
+        caj_writeDataSabores(sabores.productos_sucursal, sabor);
+    })
 }
+
 
 /*
 * función que inserta el contenido
@@ -275,8 +283,7 @@ function caj_writeData(data) {
     var box = document.querySelector('#'+idWrapper);
     box.querySelector('.lds-dual-ring').style.display = 'none';
 
-    console.log(data);
-
+    //creo los elementos
     var titulo = document.createElement('h2');
     titulo.setAttribute('class', 'caj-titulo-sabores');
     titulo.innerText = 'Sabores de esta sucursal';
@@ -318,4 +325,57 @@ function caj_writeData(data) {
     });
 
     contenedor.append(ulCategorias);
+}
+
+
+/*
+* función que inserta el contenido de sabores
+* recibe el array de sucursales
+*/
+function caj_writeDataSabores(data, saborTitulo) {
+    data = typeof data !== 'undefined' ?  data : null;
+    
+    if ( data == null ) {
+        return true;
+        console.error('no hay data para escribir');
+        caj_closeBox();
+    }
+
+    if ( saborTitulo == null ) {
+        saborTitulo = 'Sabor';
+    }
+
+    var contenedor = document.querySelector('#'+idContenido);
+    
+    //oculto el spinner
+    var box = document.querySelector('#'+idWrapper);
+    box.querySelector('.lds-dual-ring').style.display = 'none';
+
+    //creo los elementos
+    var titulo = document.createElement('h2');
+    titulo.setAttribute('class', 'caj-titulo-sabores');
+    titulo.innerText = saborTitulo;
+
+    contenedor.append(titulo);
+
+    var subTitulo = document.createElement('h3');
+        subTitulo.setAttribute('class', 'caj-sub-titulo-sabores');
+        subTitulo.innerText = 'Sucursales en donde encontrarlo:';
+
+    contenedor.append(subTitulo);
+    
+    var ulSucursales = document.createElement('ul');
+        ulSucursales.setAttribute('class', 'caj-lista-sucursales');
+
+    for (var i = 0; i < data.length; i++) {
+        
+        var li = document.createElement('li');
+            li.setAttribute('class', 'caj-li-sucursales');
+            li.setAttribute('data-id', data[i].id);
+            li.innerHTML = data[i].sucursal
+
+            ulSucursales.append(li);
+    }
+
+    contenedor.append(ulSucursales);
 }

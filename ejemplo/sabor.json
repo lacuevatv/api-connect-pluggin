@@ -1,0 +1,48 @@
+{
+    "productos_sucursal": [
+        {
+            "id": 3,
+            "sucursal": "Moreno 49 - BRC"
+        },
+        {
+            "id": 1,
+            "sucursal": "Heladería Casa Central"
+        },
+        {
+            "id": 4,
+            "sucursal": "La Cubanera - BRC"
+        },
+        {
+            "id": 18,
+            "sucursal": "Alem - Bahia Blanca"
+        },
+        {
+            "id": 19,
+            "sucursal": "Villa Mitre - Bahía Blanca"
+        },
+        {
+            "id": 20,
+            "sucursal": "Estomba  - BB"
+        },
+        {
+            "id": 23,
+            "sucursal": "Soler"
+        },
+        {
+            "id": 7,
+            "sucursal": "LAFINUR - CABA"
+        },
+        {
+            "id": 24,
+            "sucursal": "Patagonia - Bahia Blanca"
+        },
+        {
+            "id": 11,
+            "sucursal": "Mar de las Pampas"
+        },
+        {
+            "id": 25,
+            "sucursal": "Puerto Madryn"
+        }
+    ]
+}

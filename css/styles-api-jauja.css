@@ -250,6 +250,29 @@
     font-weight: 300;
 }
 
+.caj-sub-titulo-sabores {
+    font-family: 'Nunito', sans-serif;
+    color: #73706a;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: .7rem;
+}
+
+.caj-lista-sucursales {
+    font-family: 'Nunito', sans-serif;
+    color: #e6314c;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    list-style: disc;
+    padding-left: 1rem!important;
+}
+
+.caj-li-sucursales{
+    list-style: disc!important;
+    padding-left: .5rem!important;
+}
 
 /*MEDIA QUERIES*/
 
@@ -257,6 +280,10 @@
     .caj-titulo-sabores {
         font-size: 54px;
         line-height: 68px;
+    }
+
+    .caj-lista-sucursales {
+        columns: 2;
     }
 }
 
