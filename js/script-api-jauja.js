@@ -32,7 +32,7 @@ function init () {
             btnsLocales[i].addEventListener('click', function(){
                 event.preventDefault();
                 var id = this.getAttribute('href');
-
+                console.log(id);
                 if (id == '') {
                     return true;
                 }
@@ -235,11 +235,15 @@ function getSabores(id) {
     }
     
     
-    //caj_getJsonFile(id ,urlApiSabores).then(function(sucursalInfo) {
-    caj_getJsonFile('sucursal.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sucursalInfo) {
+    caj_getJsonFile(id ,urlApiSabores).then(function(sucursalInfo) {
+    //caj_getJsonFile('sucursal.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sucursalInfo) {
         
+    if ( sucursalInfo.hasOwnProperty('productos_sucursal') && sucursalInfo.productos_sucursal.hasOwnProperty('2') ) {
         var sabores = sucursalInfo.productos_sucursal[2].sabores;
-
+    } else {
+        var sabores = null
+    }
+        console.log(sucursalInfo);
         caj_writeData(sabores);
     })
 
@@ -254,10 +258,15 @@ function getSucursales(id, sabor) {
 
     if(id == null ) {
         return true;
-    }
+    } 
 
-    //caj_getJsonFile(id+'/sucursales/ ,urlApiSucursales).then(function(sucursalInfo) {
-    caj_getJsonFile('sabor.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sabores) {
+    caj_getJsonFile(id+'/sucursales/', urlApiSucursales).then(function(sabores) {
+    //caj_getJsonFile('sabor.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sabores) {
+        console.log(sabores);
+
+        if ( ! sabores.hasOwnProperty('productos_sucursal') ) {
+            var sabores = null
+        } 
 
         caj_writeDataSabores(sabores.productos_sucursal, sabor);
     })
@@ -272,9 +281,9 @@ function caj_writeData(data) {
     data = typeof data !== 'undefined' ?  data : null;
 
     if ( data == null ) {
-        return true;
         console.error('no hay data para escribir');
         caj_closeBox();
+        return true;
     }
 
     var contenedor = document.querySelector('#'+idContenido);
@@ -336,9 +345,9 @@ function caj_writeDataSabores(data, saborTitulo) {
     data = typeof data !== 'undefined' ?  data : null;
     
     if ( data == null ) {
-        return true;
         console.error('no hay data para escribir');
         caj_closeBox();
+        return true;
     }
 
     if ( saborTitulo == null ) {

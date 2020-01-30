@@ -1,0 +1,524 @@
+{
+    "sabores": [
+        {
+            "id": 1,
+            "sabor": "Ananá",
+            "descripcion": "Ananá, nada más. ¿’Tá?"
+        },
+        {
+            "id": 2,
+            "sabor": "Fruto de la pasión",
+            "descripcion": "También conocido como Maracuyá o Mburucuyá. "
+        },
+        {
+            "id": 5,
+            "sabor": "Cassis",
+            "descripcion": "Fruta levemente ácida, de la familia de las grosellas. A pesar de eso la invitan a las reuniones y suelen pasarla bien.  "
+        },
+        {
+            "id": 6,
+            "sabor": "Limsau (Exclusivo)",
+            "descripcion": "Maceración de flores de saúco con limón. Es un refresco de origen inglés que hacía nuestro tío Elwin."
+        },
+        {
+            "id": 7,
+            "sabor": "Maqui (Exclusivo)",
+            "descripcion": "Fruto nativo patagónico. Color azul violeta. ¡No usamos colorantes!"
+        },
+        {
+            "id": 8,
+            "sabor": "Mosqueta",
+            "descripcion": "Elaborado con pulpa de rosa mosqueta. "
+        },
+        {
+            "id": 9,
+            "sabor": "Sauco",
+            "descripcion": "Fruto oscuro, baya dulce. Para muchos, es más rico en helado o en mermelada que fresco. Se usa como planta medicinal."
+        },
+        {
+            "id": 10,
+            "sabor": "Arándano",
+            "descripcion": "Se cultiva en la Patagonia y en la provincia de Buenos Aires, Santa Fé y Entre Ríos.  El helado lo hacemos con la fruta local."
+        },
+        {
+            "id": 11,
+            "sabor": "Frutilla",
+            "descripcion": "Elaborado con frutos de la Comarca Andina del Paralelo 42."
+        },
+        {
+            "id": 12,
+            "sabor": "Frambuesa",
+            "descripcion": "Elaborado con frutos de la Comarca Andina del Paralelo 42."
+        },
+        {
+            "id": 13,
+            "sabor": "Calafate",
+            "descripcion": "Fruto nativo patagónico, silvestre, de muy difícil cosecha.  Hasta el momento no hay cultivos controlados. Somos pioneros en el uso de esta fruta para elaboración de helados."
+        },
+        {
+            "id": 14,
+            "sabor": "Frutos del bosque",
+            "descripcion": "Mezcla de frutas finas. ¡Sin crema!"
+        },
+        {
+            "id": 15,
+            "sabor": "Mora",
+            "descripcion": "No sabemos bien por qué, pero se le dice “Mora” a distintas frutas. Este helado es de la mora que se cosecha (y se come) en la Patagonia."
+        },
+        {
+            "id": 16,
+            "sabor": "Pomelo",
+            "descripcion": "A veces rosado, a veces no. Pero siempre Pomelo."
+        },
+        {
+            "id": 17,
+            "sabor": "Boysenberry",
+            "descripcion": "Fruta parecida a la frambuesa, más grande y oscura. Actualmente muy difícil de conseguir ya que su cultivo es complicado y se ha reemplazado por la mora híbrida. Tal como su nombre delata, es exótica."
+        },
+        {
+            "id": 19,
+            "sabor": "Maracuyá Lupulado",
+            "descripcion": "Maracuyá con lúpulo. Otro sabor complejo, de verano. (SÓLO EN EL BOLSÓN)"
+        },
+        {
+            "id": 20,
+            "sabor": "Frutilla a la crema",
+            "descripcion": "Crema con la pulpa y pedacitos de la fruta."
+        },
+        {
+            "id": 21,
+            "sabor": "Frambuesa a la crema",
+            "descripcion": "Crema con la pulpa y pedacitos de la fruta."
+        },
+        {
+            "id": 22,
+            "sabor": "Banana",
+            "descripcion": "Clásico infaltable."
+        },
+        {
+            "id": 23,
+            "sabor": "Cereza a la panna",
+            "descripcion": "Crema de cerezas al maraschino aunque sin alcohol."
+        },
+        {
+            "id": 24,
+            "sabor": "Calafate con leche de oveja",
+            "descripcion": "Elaborado, sí, con leche de oveja. No lo tenemos disponible todo el año ya que dependemos de los momentos de ordeñe del tambo de leche de oveja. El color del helado es más oscuro (contrariamente a lo que ocurre cuando una fruta se mezcla con leche). Esto se debe a que el calafate tiene alta concentración de antocianina, que es un pigmento y como tal reacciona a los cambios de ph virando el color. La leche tiene ph ácido y debido a eso el pigmento vira hacia un azul-violeta a diferencia del helado al natural donde el color es más rojizo. Si usted es daltónico seguramente toda esta explicación no le interesó demasiado."
+        },
+        {
+            "id": 25,
+            "sabor": "Frambuesa con leche de oveja",
+            "descripcion": "Tome una oveja. Ordeñe. Agarre unas frambuesas. Licuélas en la leche. Agregar azúcar. Pasar por la máquina de hacer helado. Listo."
+        },
+        {
+            "id": 26,
+            "sabor": "Lemon pie",
+            "descripcion": "Es una mousse de limón."
+        },
+        {
+            "id": 27,
+            "sabor": "Mousse de guindas",
+            "descripcion": "Helado a la crema elaborado con una salsa de guindas casera (tipo amarena) y frutas enteras. Generalmente lo hacemos en otoño."
+        },
+        {
+            "id": 28,
+            "sabor": "Mousse de frutos del bosque",
+            "descripcion": "Casi un postre en sí mismo."
+        },
+        {
+            "id": 30,
+            "sabor": "Anarangibre (Exclusivo)",
+            "descripcion": "Una ligera mousse de ananá y naranja... y pedacitos de jengibre caramelizado."
+        },
+        {
+            "id": 31,
+            "sabor": "Banana split",
+            "descripcion": "Helado de banana con granizado de chocolate y dulce de leche repostero."
+        },
+        {
+            "id": 32,
+            "sabor": "Sauco de la pasión (exclusivo)",
+            "descripcion": "Crema de maracuyá sembrada con salsa de sauco... el trópico y la patagonia en un solo helado."
+        },
+        {
+            "id": 33,
+            "sabor": "Banana spring (exclusivo)",
+            "descripcion": "Helado de banana, sembrada con frambuesas y pedacitos de naranjitas caramelizadas."
+        },
+        {
+            "id": 34,
+            "sabor": "Frambuesa al vino (exclusivo)",
+            "descripcion": "Frambuesa al natural con vino tinto."
+        },
+        {
+            "id": 35,
+            "sabor": "Crema de Quinotos",
+            "descripcion": "Crema de quinotos con un toquecito de cognac."
+        },
+        {
+            "id": 36,
+            "sabor": "Yoghurt de frutilla",
+            "descripcion": "Hecho helado, claro."
+        },
+        {
+            "id": 38,
+            "sabor": "Americana",
+            "descripcion": "No sabemos por qué, pero así se llama al helado de crema chantilly."
+        },
+        {
+            "id": 39,
+            "sabor": "Vainilla",
+            "descripcion": "Otro clásico.  Elaborado con varas de vainilla de verdad. No es tan amarilla porque NO tiene colorante (¡ni una gota!)"
+        },
+        {
+            "id": 42,
+            "sabor": "Mate cocido con tres de azúcar (exclusivo)",
+            "descripcion": "Helado de mate cocido con leche y... azúcar."
+        },
+        {
+            "id": 43,
+            "sabor": "Canela",
+            "descripcion": "Helado a la crema... de canela. "
+        },
+        {
+            "id": 44,
+            "sabor": "Crema italiana",
+            "descripcion": "Crema americana con galletitas bañadas en chocolate y dulce de leche repostero."
+        },
+        {
+            "id": 45,
+            "sabor": "Crema rusa",
+            "descripcion": "Crema de nueces. Elaboramos una pasta de nueces y sobre eso se realiza el helado. ¡No es vainilla con nueces!"
+        },
+        {
+            "id": 46,
+            "sabor": "Gianduia",
+            "descripcion": "Crema de avellanas al chocolate. Con pedacitos de avellanas. Está muy rico. El chocolate es semi amargo."
+        },
+        {
+            "id": 47,
+            "sabor": "Almendrado",
+            "descripcion": "Crema de almendras. Ídem crema rusa pero con almendras. Las almendras se agregan en el momento de servirlo. Por favor ayúdenos a no olvidarlo reclamándolas :)"
+        },
+        {
+            "id": 48,
+            "sabor": "Ristretto",
+            "descripcion": "Es un café corto muy concentrado. Recomendamos acompañarlo con crema para suavizar el gusto. Te tiene que gustar el café fuerte... sino, ni lo intentes."
+        },
+        {
+            "id": 49,
+            "sabor": "Selva negra",
+            "descripcion": "Crema americana, guindas, granizado de chocolate y bizcochuelo borracho."
+        },
+        {
+            "id": 50,
+            "sabor": "Flan con dulce de leche",
+            "descripcion": "Flan con dulce de leche repostero y crocante de maní y caramelo. Solemos hacerlo en invierno..."
+        },
+        {
+            "id": 51,
+            "sabor": "Super sambayón",
+            "descripcion": "Crema, huevos (90 por balde), azúcar, leche y marsala (vino joven muy dulce). No lleva oporto. "
+        },
+        {
+            "id": 52,
+            "sabor": "Tiramisu",
+            "descripcion": "Helado de queso mascarpone con pionono, cacao y café."
+        },
+        {
+            "id": 53,
+            "sabor": "Naranja con Lúpulo Victoria",
+            "descripcion": "En la época de cosecha de lúpulo, elaboramos este helado especial, hecho con jugo de naranja (sin agua agregada) y lúpulo Victoria. Los cerveceros lo aman, pero no es un sabor fácil. (SÓLO EN EL BOLSÓN)"
+        },
+        {
+            "id": 54,
+            "sabor": "Mascarpone con frambuesas",
+            "descripcion": "Tenés que probarlo."
+        },
+        {
+            "id": 55,
+            "sabor": "Crema de maní",
+            "descripcion": "Su nombre lo dice todo. Con pasta de maní. "
+        },
+        {
+            "id": 56,
+            "sabor": "Praliné",
+            "descripcion": "Con pedacitos de castañas de cajú y almendras caramelizadas. "
+        },
+        {
+            "id": 57,
+            "sabor": "Chocolate",
+            "descripcion": "¿Qué podemos decir que no se haya dicho del chocolate?."
+        },
+        {
+            "id": 58,
+            "sabor": "Chocolate con almendras",
+            "descripcion": "Con almendras tostadas que le agregamos al momento de servirlo (para que no se humedezcan)"
+        },
+        {
+            "id": 59,
+            "sabor": "Chocolate blanco",
+            "descripcion": "Con pedacitos de chocolate blanco, como para que quede claro."
+        },
+        {
+            "id": 60,
+            "sabor": "Chocolate árabe",
+            "descripcion": "Con crocante de almendras, nueces, praliné de maní y pasas de uva al rhum."
+        },
+        {
+            "id": 61,
+            "sabor": "Chocolate chips",
+            "descripcion": "Con granizado de chocolate."
+        },
+        {
+            "id": 62,
+            "sabor": "Choco brownies",
+            "descripcion": "Mousse de chocolate con brownies caseritos."
+        },
+        {
+            "id": 63,
+            "sabor": "Chocolate amargo",
+            "descripcion": "No se ríe nunca, pero hace felices a sus seguidores."
+        },
+        {
+            "id": 64,
+            "sabor": "Chocolate con naranjitas",
+            "descripcion": "Chocolate amargo con naranjitas caramelizadas. "
+        },
+        {
+            "id": 65,
+            "sabor": "Chocolate profundo",
+            "descripcion": "Mousse de chocolate amargo, intenso, fuerte. Para fanáticos."
+        },
+        {
+            "id": 67,
+            "sabor": "Mousse de chocolate",
+            "descripcion": "Cremosa, suave y dulce..."
+        },
+        {
+            "id": 68,
+            "sabor": "Chocolate andino",
+            "descripcion": "Una mezcla de helado de chocolate con helado de dulce de leche, y nueces."
+        },
+        {
+            "id": 69,
+            "sabor": "Dulce de leche",
+            "descripcion": "Un clásico sobre el que no hace falta añadir más nada."
+        },
+        {
+            "id": 70,
+            "sabor": "Merengueche",
+            "descripcion": "Helado de dulce de leche con merengues caseros. "
+        },
+        {
+            "id": 71,
+            "sabor": "Dulce de leche granizado",
+            "descripcion": "Otro infaltable."
+        },
+        {
+            "id": 72,
+            "sabor": "Dulce de leche con nueces",
+            "descripcion": "Con pedacitos de nueces de El Bolsón y la Comarca Andina del Paralelo 42."
+        },
+        {
+            "id": 73,
+            "sabor": "Dulce de leche con moras",
+            "descripcion": "Le ponemos un toque patagónico al clásico argentino."
+        },
+        {
+            "id": 74,
+            "sabor": "Dulce de leche con brownies",
+            "descripcion": "Precisamente eso. Los brownies los hacemos nosotros también."
+        },
+        {
+            "id": 75,
+            "sabor": "Mousse de dulce de leche",
+            "descripcion": "Super requete cremoso."
+        },
+        {
+            "id": 76,
+            "sabor": "Doble dulce de leche",
+            "descripcion": "Para almas golosas. Con dulce de leche."
+        },
+        {
+            "id": 77,
+            "sabor": "Dulce de leche con ciruelas al rhum",
+            "descripcion": "Un viejo clásico que a veces vuelve."
+        },
+        {
+            "id": 78,
+            "sabor": "Cerveza",
+            "descripcion": "Helado de cerveza artesanal de la comarca andina del paralelo 42. Sólo para valientes iniciados."
+        },
+        {
+            "id": 79,
+            "sabor": "Membrillo",
+            "descripcion": "Lo hacemos -algunos otoños- con los membrillos de nuestra casa."
+        },
+        {
+            "id": 80,
+            "sabor": "Crema de otoño",
+            "descripcion": "Crema americana con membrillos (de nuestra casa, sí) caramelizados... "
+        },
+        {
+            "id": 81,
+            "sabor": "Yoghurt natural",
+            "descripcion": "Helado de precisamente eso."
+        },
+        {
+            "id": 82,
+            "sabor": "Cardamomo",
+            "descripcion": "Lo hacemos al natural (sin crema). Es una especia de origen asiático. Se usa para cocinar. Los árabes lo beben con el café. Y dicen -dicen- que es afrodisíaco. "
+        },
+        {
+            "id": 83,
+            "sabor": "Café Chocoso",
+            "descripcion": "Crema de café; con salsa de chocolate."
+        },
+        {
+            "id": 86,
+            "sabor": "Corinto",
+            "descripcion": "Es una variedad de grosella roja. También llamada \"Uva de Señora\". Levemente ácida (y sí, es prima del cassis)"
+        },
+        {
+            "id": 87,
+            "sabor": "Super Chantilly con Frutillas",
+            "descripcion": "El doble de crema que una crema americana y frutillas de la Comarca Andina del Paralelo 42. (sólo en El Bolsón)"
+        },
+        {
+            "id": 89,
+            "sabor": "Mousse del Piltri",
+            "descripcion": "Mousse de dulce de leche con almendras caramelizadas. Un homenaje al cerro Piltriquitrón..."
+        },
+        {
+            "id": 90,
+            "sabor": "Banacuyá con Chocolate",
+            "descripcion": "Crema de banana y Maracuyá con salsa de chocolate."
+        },
+        {
+            "id": 91,
+            "sabor": "Sambaleche",
+            "descripcion": "50% sambayón - 50% dulce de leche. Un clásico de la primera hora de Jauja"
+        },
+        {
+            "id": 92,
+            "sabor": "CassiChoco",
+            "descripcion": "Helado de chocolate dulce con salsa de Cassis de la Comarca Andina del Paralelo 42 "
+        },
+        {
+            "id": 95,
+            "sabor": "Crema del Des-Oriente ¡NUEVO!",
+            "descripcion": "Agarrás una crema, huevos, Tahini (pasta de sésamo) y unas semillas de sésamo caramelizadas (con poco azúcar) y ¡Zas! tenés la Crema del Des-Oriente "
+        },
+        {
+            "id": 97,
+            "sabor": "Limón y Melisa",
+            "descripcion": "Refrescante limón y relajante Melisa (también conocida como Toronjil). Una combinación ideal para tomarte el verano con muuuuuucha calma."
+        },
+        {
+            "id": 98,
+            "sabor": "Yoghurt de Frambuesa",
+            "descripcion": "Agarrás un yoghurt, unas frambuesas, crema, leche y azúcar, lo convertís en helado... ¡Y listo!"
+        },
+        {
+            "id": 99,
+            "sabor": "Chocolate Blanco con Frambuesas",
+            "descripcion": "Un helado hecho a pedido del público. Con pedacitos de chocolate blanco y dulces frambuesas."
+        },
+        {
+            "id": 100,
+            "sabor": "Coco",
+            "descripcion": "Solo coco, loco."
+        },
+        {
+            "id": 101,
+            "sabor": "Limonada de Frambuesa",
+            "descripcion": "Refrescante limonada con un poco de frambuesa"
+        },
+        {
+            "id": 102,
+            "sabor": "Peperina Granizada",
+            "descripcion": "Versión vernácula (libre de saborizantes y colorantes) de la Menta Granizada. Elaborado con hojas de menta y de peperina."
+        },
+        {
+            "id": 103,
+            "sabor": "Profundo y Contradictorio",
+            "descripcion": "Chocolate profundo, dulce de leche, merengues. Guau."
+        },
+        {
+            "id": 104,
+            "sabor": "Casi Light",
+            "descripcion": "Chocolate blanco con dulce de leche y almendras."
+        },
+        {
+            "id": 105,
+            "sabor": "Merengada de Avellanas",
+            "descripcion": "Crema chantilly con dacquoise de almendras y pedacitos de avellanas"
+        },
+        {
+            "id": 106,
+            "sabor": "Crema de higos con nueces",
+            "descripcion": "Higos, nueces, crema. No puede fallar."
+        },
+        {
+            "id": 107,
+            "sabor": "Granizado",
+            "descripcion": "Crema con pedacitos de chocolate."
+        },
+        {
+            "id": 108,
+            "sabor": "Amerisqueta",
+            "descripcion": "Helado de Crema Americana con Dulce de Mosqueta"
+        },
+        {
+            "id": 109,
+            "sabor": "Chocolate con Maní",
+            "descripcion": "Chocolate, con maní."
+        },
+        {
+            "id": 111,
+            "sabor": "Frambuesa con leche de oveja",
+            "descripcion": "Agarre una oveja. Ordéñela. \r\nCoseche frambuesas.\r\nMezlcar y hacer helado.\r\nListo."
+        },
+        {
+            "id": 112,
+            "sabor": "Limón",
+            "descripcion": "Limón! Y nada más que limón."
+        },
+        {
+            "id": 113,
+            "sabor": "Lúpulo",
+            "descripcion": "Crema de Lúpulo con frambuesas"
+        },
+        {
+            "id": 114,
+            "sabor": "Pepilla",
+            "descripcion": "Helado de -sobre todo- frutilla con un toque de -sí- Pepino. Refrescante y riquísimo."
+        },
+        {
+            "id": 115,
+            "sabor": "Murra",
+            "descripcion": "Mora Silvestre - Zarzaparrilla. Se la ve (y se la saborea) al costado de muchos caminos en nuestra Comarca, como también sucede con la Mosqueta."
+        },
+        {
+            "id": 116,
+            "sabor": "Yoghurt del Desoriente",
+            "descripcion": "Yoghurt Natural, Ananá, Semillas de sésamo caramelizadas."
+        },
+        {
+            "id": 117,
+            "sabor": "Limongibre",
+            "descripcion": "Limonada con almíbar de jengibre. Refrescante y picantito."
+        },
+        {
+            "id": 118,
+            "sabor": "Pistacho",
+            "descripcion": "Elaborado con pistacho argentino. No es verde fosforescente... porque no tiene colorante. No tiene un sabor fuertísimo... porque no tiene saborizante. Eso sí, tiene pistachos de verdad."
+        },
+        {
+            "id": 119,
+            "sabor": "Del Huerto",
+            "descripcion": "Jugo de naranja. Jugo de Manzana verde. Jugo de Zanahoria. Sin agregado de agua ni leche. Una auténtica locura. Con menos azúcar que los helados tradicionales."
+        }
+    ]
+}
