@@ -166,11 +166,11 @@ function caj_checkLocalStorage() {
     }
 }
 
-function caj_getJsonFile (id, route) {
+function caj_getJsonFile (id, route, type) {
     return new Promise(
         function (resolve, reject) {
             
-            var jsonFile = caj_getFromLocalStore('sucursal_'+id);
+            var jsonFile = caj_getFromLocalStore(type+id);
             
             if ( jsonFile ) {
                 
@@ -191,7 +191,14 @@ function caj_getJsonFile (id, route) {
                         cache: 'default'
                     };
 
-                fetch(route + id, miInit)
+                
+                var ruta = route + id;
+
+                if (type=='sabor_') {
+                    ruta = route + id + '/sucursales/';
+                }
+
+                fetch(ruta, miInit)
                 .then(function(response) {
                     
                     if ( response.ok ) {
@@ -208,7 +215,7 @@ function caj_getJsonFile (id, route) {
                 })
                 .then(function(jsonFile){
                     
-                    caj_saveInLocalStore('sucursal_'+id, JSON.stringify(jsonFile) );
+                    caj_saveInLocalStore(type+id, JSON.stringify(jsonFile) );
     
                     resolve( jsonFile );
                 })
@@ -235,7 +242,7 @@ function getSabores(id) {
     }
     
     
-    caj_getJsonFile(id ,urlApiSabores).then(function(sucursalInfo) {
+    caj_getJsonFile(id ,urlApiSabores, 'sucursal_').then(function(sucursalInfo) {
     //caj_getJsonFile('sucursal.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sucursalInfo) {
         
     if ( sucursalInfo.hasOwnProperty('productos_sucursal') && sucursalInfo.productos_sucursal.hasOwnProperty('2') ) {
@@ -243,7 +250,11 @@ function getSabores(id) {
     } else {
         var sabores = null
     }
-        console.log(sucursalInfo);
+        if (sabores == null) {
+            //como es null lo borra del local
+            caj_deleteInLocalStore('sucursal_'+id);
+        }
+        
         caj_writeData(sabores);
     })
 
@@ -260,13 +271,18 @@ function getSucursales(id, sabor) {
         return true;
     } 
 
-    caj_getJsonFile(id+'/sucursales/', urlApiSucursales).then(function(sabores) {
+    caj_getJsonFile(id, urlApiSucursales, 'sabor_').then(function(sabores) {
     //caj_getJsonFile('sabor.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sabores) {
-        console.log(sabores);
+        
 
-        if ( ! sabores.hasOwnProperty('productos_sucursal') || sabores.productos_sucursal.length == 0 ) {
+        if ( ! sabores.hasOwnProperty('productos_sucursal') ) {
             var sabores = null
         } 
+        
+        if (sabores == null) {
+            //como es null lo borra del local
+            caj_deleteInLocalStore('sabor_'+id);
+        }
 
         caj_writeDataSabores(sabores.productos_sucursal, sabor);
     })
