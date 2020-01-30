@@ -264,7 +264,7 @@ function getSucursales(id, sabor) {
     //caj_getJsonFile('sabor.json' ,'https://www.heladosjauja.com.ar/web/wp-content/plugins/connect-api-jauja/ejemplo/').then(function(sabores) {
         console.log(sabores);
 
-        if ( ! sabores.hasOwnProperty('productos_sucursal') ) {
+        if ( ! sabores.hasOwnProperty('productos_sucursal') || sabores.productos_sucursal.length == 0 ) {
             var sabores = null
         } 
 
